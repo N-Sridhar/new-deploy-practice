@@ -1,0 +1,31 @@
+[debug] [2023-02-04T15:34:17.812Z] ----------------------------------------------------------------------
+[debug] [2023-02-04T15:34:17.815Z] Command:       F:\Profession\nodejs\node.exe C:\Users\Sridhar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-04T15:34:17.816Z] CLI Version:   11.22.0
+[debug] [2023-02-04T15:34:17.816Z] Platform:      win32
+[debug] [2023-02-04T15:34:17.816Z] Node Version:  v16.13.1
+[debug] [2023-02-04T15:34:17.818Z] Time:          Sat Feb 04 2023 21:04:17 GMT+0530 (India Standard Time)
+[debug] [2023-02-04T15:34:17.818Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-04T15:34:17.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-04T15:34:17.941Z] > authorizing via signed-in user (nsridharbtech@gmail.com)
+[debug] [2023-02-04T15:34:17.941Z] [iam] checking project new-deploy-practice for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-04T15:34:17.945Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/new-deploy-practice:testIamPermissions [none]
+[debug] [2023-02-04T15:34:17.945Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/new-deploy-practice:testIamPermissions x-goog-quota-user=projects/new-deploy-practice
+[debug] [2023-02-04T15:34:17.945Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/new-deploy-practice:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-04T15:34:19.674Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/new-deploy-practice:testIamPermissions 200
+[debug] [2023-02-04T15:34:19.675Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/new-deploy-practice:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-04T15:34:19.678Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/new-deploy-practice [none]
+[debug] [2023-02-04T15:34:20.298Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/new-deploy-practice 200
+[debug] [2023-02-04T15:34:20.299Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/new-deploy-practice {"projectId":"new-deploy-practice","projectNumber":"399587962931","displayName":"New-Deploy-Practice","name":"projects/new-deploy-practice","resources":{"hostingSite":"new-deploy-practice"},"state":"ACTIVE","etag":"1_38692432-e09c-463c-85a5-642cc3dbef10"}
+[debug] [2023-02-04T15:34:28.161Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/new-deploy-practice/sites pageToken=&pageSize=10
+[debug] [2023-02-04T15:34:29.130Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/new-deploy-practice/sites 200
+[debug] [2023-02-04T15:34:29.131Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/new-deploy-practice/sites {"sites":[{"name":"projects/new-deploy-practice/sites/new-deploy-practice","defaultUrl":"https://new-deploy-practice.web.app","appId":"1:399587962931:web:3b03f0e33b91bae1387346","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-04T15:34:29.134Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:399587962931:web:3b03f0e33b91bae1387346/config [none]
+[debug] [2023-02-04T15:34:30.768Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:399587962931:web:3b03f0e33b91bae1387346/config 200
+[debug] [2023-02-04T15:34:30.768Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:399587962931:web:3b03f0e33b91bae1387346/config {"projectId":"new-deploy-practice","appId":"1:399587962931:web:3b03f0e33b91bae1387346","storageBucket":"new-deploy-practice.appspot.com","apiKey":"AIzaSyBXGf1dsSF0WRBVKEjvC5UAgR2wdDS41jw","authDomain":"new-deploy-practice.firebaseapp.com","messagingSenderId":"399587962931","measurementId":"G-FTEJD044GL"}
+[debug] [2023-02-04T15:35:31.379Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\Sridhar\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:222:18)
+    at async prepareFrameworks (C:\Users\Sridhar\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:306:84)
+    at async deploy (C:\Users\Sridhar\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
